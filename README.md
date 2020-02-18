@@ -1,11 +1,6 @@
----
-marp: true
----
-
 # python-tutorials
  A set of slides to help teach Python.
 
----
 
 # Preamble
 ## Who you are
@@ -15,8 +10,6 @@ I assume the reader has no programming experience and is starting from a
 highschool level knowledge base.
 Any can pick these slides up.
 
----
-
 ## What this doesn't teach you
 These tutorials are with the intent to teach Python and purely Python.
 These lessons will not attempt to teach programming in general.
@@ -24,7 +17,6 @@ These lessons will not attempt to teach programming in general.
 I must say this explicitly because there are certain features and conveniences
 that Python provides which are rare in many other languages.
 
----
 
 ## What we hope you get out of these lessons
 In my opinion, learning to program is valuable **if** you're able to make use
@@ -37,8 +29,6 @@ Thus, the goals is to be able to do the following:
 * Automate your everyday processes
 * Use Python as a complicated calculator
 * Parse and handle data from a file
-
----
 
 # Structure
 1. Setting up environment
