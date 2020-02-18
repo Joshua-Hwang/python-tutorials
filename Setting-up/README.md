@@ -99,3 +99,9 @@ To preview these slides properly, open the command palette and look for
 
 ---
 
+## Starting to code
+If all has gone well then we should be able to start coding now.
+As a test open the test.py file in VSCode and look for the green play button at
+the top right.
+
+![Location of play icon](where-play.png)
