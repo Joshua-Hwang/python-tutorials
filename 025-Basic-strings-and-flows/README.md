@@ -96,13 +96,5 @@ practice and digest this.
 
 ---
 
-## Reflect
-Now let's put proper names to what we've learnt.
+## Proper names
 
-When we type `1` or `0.32` or 'False` we call these *literals*.
-
-This `x` that we've been using is known as a *variable*.
-This is because the value can vary.
-
-When we put a value into a variable like `x=3` we call this an *assignment*.
-This is because we're assigning a literal to a variable.

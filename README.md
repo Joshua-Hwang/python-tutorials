@@ -32,7 +32,8 @@ Thus, the goals is to be able to do the following:
 
 # Structure
 1. Setting up environment
-1. Basic operations, loops, ifs, literals
+1. Basic operations and numbers
+1. Basic loops and ifs and strings
 1. Basic containers (lists, dictionaries, sets)
 1. Exception handling
 1. Accessing and manipulating files on the system
