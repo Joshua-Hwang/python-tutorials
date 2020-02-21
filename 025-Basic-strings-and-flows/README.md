@@ -2,99 +2,117 @@
 marp: true
 ---
 
-# Basic operations
-This section intends to teach variables, numbers and assignments.
+# Basic strings, functions and control flows
+This section intends to teach how programming languages handle words and about
+control flows.
 
 ---
 
-## Python as a calculator
-For this short section we're going to ignore the work we had done to
-Visual Studio Code and instead focus on the Python *interpreter*.
-
-Open a terminal or command prompt and type,
+## We have numbers, now what
+So we can use numbers great. But afterwards you start wanting something more,
+something that can really *speak* to you. Well now we can with **strings**!
 ```
-python
+abc = "Hello, World!"
+abc
 ```
 
 ---
 
-## The interpreter
-At this point your terminal should have changed a little.
-You might be seeing something like this,
-```
-Python 3.8.1 (default, Jan 22 2020, 06:38:00) 
-[GCC 9.2.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> 
-```
+## Strings
+Strings (like `"Hello, World!"`) are literals just like the numbers we saw
+earlier. Just like the number literals the **string literals** can be assigned
+to a variable.
 
-This is the Python interpreter prompt.
-Try typing in some basic maths, `2+2`, `3-5*2` etc.
-
-Each time you do this Python parses the line of input and evaluates it.
-This is in stark contrast to other languages which aren't *interpreted* but are
-*compiled*.
-In compiled languages the whole program and flow must be written out
-first before the computer *compiles* it to machine code (very low level stuff)
-which becomes a binary or executable file.
+>Strings are called "strings" because they are made up of a sequence,
+>or string, of characters.
 
 ---
 
-## A calculator
-Let's see if we can do some more stuff, multiplication? Can we use brackets?
-How about the something like 5^2?
+## Functions
+So we can now write messages. But they still have those annoying single-quotes
+surrounding them. To output or  **print** a message correctly we have to use
+a **function**. These are special operations that go beyond the basic
+addition and multiplication that we've been using.
+
+In this case we'll be using the `print()` function.
+```
+print("Hello")
+print(abc)
+print(abc, "Goodbye")
+```
+
+You will notice when I referred to the function I had `()`. This is because a
+function might require additional information. These additional pieces of
+information are sometimes called **arguments** or **parameters**.
+When you call `print` the program needs to know *what* do you want to print.
 
 ---
 
-## Highly advanced calculator
-Ok let's try some more stuff with our calculator. In mathematics we have the
-concept of unknowns like when we're asked to solve for x. Let's try something,
-```
-x = 2*(5-2)/3
-```
-When we run this command in our prompt we get... nothing? Well don't worry, in
-programming it's common that if there's nothing said then there's nothing wrong!
+## Ifs and elses
+Now let's say we're working on a project, the boss needs to know if we're going
+overbudget this month. The boss don't *do* numbers, we'll have to communicate it
+in a way that is easy to understand.
 
-To get our answer we have to write `x` without being on the left of
-an equal sign, i.e. `x =` (more on this later).
-
-Note how I said *without and equal sign*. That means we can also do `x + 4` and,
-as long as it isn't `x + 4 =`, it does exactly what we suspect.
+We'll write this in VSCode and run our program from there.
+```
+# This is a comment. The program ignores this line. It's useful for communication
+budget = 100 # this is our monthly budget in $1,000s
+costs = 25.1*4 # we have weekly costs of $2,5100
+netTotal = budget - costs # this is the net total income
+if netTotal > 0:
+  print("We're fine")
+else:
+  print("We're overbudget")
+```
 
 ---
 
-# More than a calculator
-Now you might be thinking that we've been following the usual mathematic rules
-which might make you assume `x = 2.0` and nothing will change it. Just like the
-speed of light or the acceleration of gravity right?
-
-Luckily for us programming does not follow that mathematical rule. Try the
-following,
+## Dissecting the if else block
+Let's take a look at what we've done. It reads very much like a natural sentence.
+>If thing is true do something else do something else
 ```
-x = 3.0
-x
-x = 5.0
-x
+if thing:
+  something()
+else:
+  somethingElse()
 ```
 
-This is the first important distiction. Don't think of `x` as a number or an
-unknown number you have to solve. Instead think of it like a box or container.
+The `else` block is optional and can be skipped.
 
 ---
 
-## A container?
-Take a look at what we've done with `x` in the past few sides. `x=2*(5-2)/3`
-means we first put `2*(5-2)/3` *into* `x`. But the computer is lazy so instead
-will first evaluate `2*(5-2)/3` to `2.0` and then places that value into `x`.
+## More control flow
+Let's say we want to make another check if we just meet our budget.
+We could do the following,
+```
+if netTotal > 0:
+  print("We're fine")
+else:
+  if netTotal == 0:
+    print("We're just on budget")
+  else:
+    print("We're overbudget")
+```
 
-When we run something like `x+2`, since there's no equals sign thus we peek
-inside our `x` variable and replace `x+2` with `2.0+2` which evaluates to `4.0`.
-
-This is a very difficult topic to wrap your head around the first time since it
-goes against what you've probably been taught at school. Take some time to
-practice and digest this.
+But we can use a much more **elegant** solution.
+Edit your previous program with the following.
+```
+if netTotal > 0:
+  print("We're fine")
+elif netTotal == 0:
+  print("We're just on budget")
+else:
+  print("We're overbudget")
+```
 
 ---
 
-## Proper names
+## Deeper dive into functions
+You've been exposed to `print()` but as you might've guessed there are more
+functions than just that. Here are a few of the most common.
+* `len()` measures the length of the parameter
+* `int()` convert the parameter to an integer
+* `str()` convert the parameter to a string
+* `float()` convert the parameter to a float
 
+More can be found at: https://docs.python.org/3/library/functions.html

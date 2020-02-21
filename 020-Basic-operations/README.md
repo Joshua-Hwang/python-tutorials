@@ -42,7 +42,25 @@ which becomes a binary or executable file.
 
 ## A calculator
 Let's see if we can do some more stuff, multiplication? Can we use brackets?
-How about the something like 5^2?
+How about the something like 5^3?
+```
+5^3
+6
+5^2
+7
+```
+Uhhh... Well that's unexpected. (You don't need to know what any of this means
+so don't worry). In many languages including Python the `^`
+operator does not raise powers. Instead it takes the XOR function of the bits
+that make up the number.
+```
+5 = 101
+3 = 011
+-------
+6 = 110
+```
+
+To get powers we need to use `5**3`.
 
 ---
 
@@ -58,7 +76,7 @@ programming it's common that if there's nothing said then there's nothing wrong!
 To get our answer we have to write `x` without being on the left of
 an equal sign, i.e. `x =` (more on this later).
 
-Note how I said *without and equal sign*. That means we can also do `x + 4` and,
+Note how I said *without an equal sign*. That means we can also do `x + 4` and,
 as long as it isn't `x + 4 =`, it does exactly what we suspect.
 
 ---
