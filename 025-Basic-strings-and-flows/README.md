@@ -11,7 +11,7 @@ control flows.
 ## We have numbers, now what
 So we can use numbers great. But afterwards you start wanting something more,
 something that can really *speak* to you. Well now we can with **strings**!
-```
+```python
 abc = "Hello, World!"
 abc
 ```
@@ -35,7 +35,7 @@ a **function**. These are special operations that go beyond the basic
 addition and multiplication that we've been using.
 
 In this case we'll be using the `print()` function.
-```
+```python
 print("Hello")
 print(abc)
 print(abc, "Goodbye")
@@ -54,7 +54,7 @@ overbudget this month. The boss don't *do* numbers, we'll have to communicate it
 in a way that is easy to understand.
 
 We'll write this in VSCode and run our program from there.
-```
+```python
 # This is a comment. The program ignores this line. It's useful for communication
 budget = 100 # this is our monthly budget in $1,000s
 costs = 25.1*4 # we have weekly costs of $2,5100
@@ -70,7 +70,7 @@ else:
 ## Dissecting the if else block
 Let's take a look at what we've done. It reads very much like a natural sentence.
 >If thing is true do something else do something else
-```
+```python
 if thing:
   something()
 else:
@@ -84,7 +84,7 @@ The `else` block is optional and can be skipped.
 ## More control flow
 Let's say we want to make another check if we just meet our budget.
 We could do the following,
-```
+```python
 if netTotal > 0:
   print("We're fine")
 else:
@@ -96,7 +96,7 @@ else:
 
 But we can use a much more **elegant** solution.
 Edit your previous program with the following.
-```
+```python
 if netTotal > 0:
   print("We're fine")
 elif netTotal == 0:
