@@ -64,6 +64,17 @@ To get powers we need to use `5**3`.
 
 ---
 
+## What they didn't teach you in maths
+There is one operator that wasn't taught in school that is actually very
+important. This is the **modulo** operator, `4 % 3`. This operation gives
+the remainder of a division.
+
+In the example `4 % 3` we have a remainder 1. The operation is very important
+when you're checking if a number is divisible by another. If a number if
+divisible then there won't be any remainder, `562 % 2 = 0`.
+
+---
+
 ## Highly advanced calculator
 Ok let's try some more stuff with our calculator. In mathematics we have the
 concept of unknowns like when we're asked to solve for x. Let's try something,

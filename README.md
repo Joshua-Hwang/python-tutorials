@@ -34,7 +34,7 @@ Thus, the goals is to be able to do the following:
 1. Setting up environment
 1. Basic operations and numbers
 1. Basic loops and ifs and strings
-1. Basic containers (lists, dictionaries, sets)
+1. Basic containers (lists, dictionaries, sets) and loops
 1. Exception handling
 1. Accessing and manipulating files on the system
 1. For loop comprehension and functional programming

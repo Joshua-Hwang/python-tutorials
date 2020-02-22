@@ -75,9 +75,43 @@ if thing:
   something()
 else:
   somethingElse()
+print("If statement done")
 ```
 
 The `else` block is optional and can be skipped.
+
+---
+
+## Indents
+You'll notice there's an indent at `something()` and `somethingElse()`.
+Why is this? Consider the following,
+```python
+if thing:
+something()
+print("thing is true")
+print("If statement done")
+```
+
+---
+
+Does it mean?
+```python
+if thing:
+    something()
+    print("thing is true")
+    print("If statement done")
+```
+
+or
+```python
+if thing:
+    something()
+    print("thing is true")
+
+print("If statement done")
+```
+
+This is why the indents exist.
 
 ---
 
@@ -93,6 +127,8 @@ else:
   else:
     print("We're overbudget")
 ```
+
+---
 
 But we can use a much more **elegant** solution.
 Edit your previous program with the following.
