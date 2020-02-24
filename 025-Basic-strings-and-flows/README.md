@@ -50,7 +50,7 @@ When you call `print` the program needs to know *what* do you want to print.
 
 ## Ifs and elses
 Now let's say we're working on a project, the boss needs to know if we're going
-overbudget this month. The boss don't *do* numbers, we'll have to communicate it
+overbudget this month. The boss doesn't *do* numbers, we'll have to communicate it
 in a way that is easy to understand.
 
 We'll write this in VSCode and run our program from there.
@@ -69,7 +69,7 @@ else:
 
 ## Dissecting the if else block
 Let's take a look at what we've done. It reads very much like a natural sentence.
->If thing is true do something else do something else
+>If thing is true do something, else do something else
 ```python
 if thing:
   something()

@@ -1,9 +1,11 @@
 # Basic operations exercises
 ## Using variables
 Convert the following into Python,
-`y = 3 + i + x`
-`i = 3/4`
-`x = 3(4+5)`
+```
+y = 3 + i + x
+i = 3/4
+x = 3(4+5)
+```
 
 ## The division question
 Consider `4/2` and `4-2` are the results the same?

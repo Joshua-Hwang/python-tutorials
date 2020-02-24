@@ -25,6 +25,7 @@ If you don't know what that means don't worry, keep reading.
 >exactly what changed, who changed it, and why.
 (Kevin Cooper, https://hackernoon.com/understanding-git-fcffd87c15a3)
 
+TODO split this
 It also allows multiple users to `clone` the current state of the code from a
 central repository. This is useful if you have a new computer or you have a new
 team member who needs to start working on the codebase.
@@ -52,7 +53,7 @@ telling us to clone or download.
 
 We could just download a static zip of the repo but this won't allow us to `pull`
 new updates if these tutorials ever change.
-
+TODO: SPLIT THIS
 In Windows you will be provided options like `Open Visual Studio` or `Open in
 Desktop` both of these are fine. If you are not on Windows or you just prefer
 the command line approach, open a terminal and navigate to a place where you 

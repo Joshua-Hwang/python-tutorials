@@ -28,11 +28,11 @@ happy and when they are not.
 Replace the comments of the form `#!` with the correct implementation.
 
 ## Teleprompter \*cough\*
-The teleprompter also needs to ensure the audience does not become to unruly.
+The teleprompter also needs to ensure the audience does not become too unruly.
 A polite \*cough\* should help with that.
 
-The audience is considered unruly when `audienceHappiness` is above `0.5` or
-below `-0.5`. Before you print the line of the speech please print a `*cough*`.
+The audience is considered unruly when `audienceHappiness` is above `0.25` or
+below `-0.25`. Before you print the line of the speech please print a `*cough*`.
 
 # Solutions
 ## Teleprompter
