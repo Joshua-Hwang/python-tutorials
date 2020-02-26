@@ -141,5 +141,45 @@ Luckily lists have an additional feature.
 print("Hi", employees[11])
 ```
 
-TODO: make some note about it's 0-based index
+Quick thinking! You can quickly specify the position of the element you want
+in a list.
 
+The **indexing** we've just seen and the for loops from earlier
+allow us to make granular adjustments to the list but also handle all our
+data in only a couple of lines.
+
+---
+
+## Did you notice?
+Some of the very astute readers would have noticed that `Barbara` actually
+*isn't* the 11th element in the list. If you count correctly `Barbara` is 12th.
+So what happened?
+
+---
+
+## 0 based indexing
+Many languages (practically most) use 0 as their starting point. That means
+`James` was sitting at table `0` *not* table `1`.
+
+Though it may seem un-intuitive, the first element in the list should be at
+`1`. We need to consider what's happening behind the scenes.
+
+When we're indexing a list our computer is ready to read the first element,
+`James`. But if we want to get the third element, `John` for instance
+we'd need to *move* ourselves 2 elements along the list. Hence `John` is at
+index `2` and not `3`.
+
+---
+
+## So 0 instead of 1 easy
+Well sure... but it actually affects so many aspects of using lists not just
+simple indexing. You'll probably find yourself tripping on 0 indexing I know
+I struggled with the concept early on.
+
+---
+
+## A quick aside
+Many of the questions in the exercises require user input.
+Thus to request user input *as a string* use the `input()` function.
+Take some time to go to https://docs.python.org/3/library/functions.html
+and read up on it.
