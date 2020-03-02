@@ -183,3 +183,17 @@ Many of the questions in the exercises require user input.
 Thus to request user input *as a string* use the `input()` function.
 Take some time to go to https://docs.python.org/3/library/functions.html
 and read up on it.
+
+---
+
+## Let's get real
+because I can't think of a good scenario for this part.
+Let's try and count the number of vowels in a manually inputted string.
+Here is the code,
+```Python
+stringToParse = input()
+count = 0
+for c in stringToParse:
+  if c in ['a','e','i','o','u']:
+    count += 1
+```
