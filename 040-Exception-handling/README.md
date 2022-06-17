@@ -4,7 +4,7 @@ towards I/O (Input/Output).
 
 ---
 
-## Case study: A new calculator!
+## Motivating example: A new calculator!
 It's been a long day in the office at Calc inc. for everyone. The final commits
 have been pushed for the day and everyone is clocking out. You decide to stay
 behind to run a few tests on our new product.
